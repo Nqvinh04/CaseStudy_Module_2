@@ -10,7 +10,7 @@ public class AddProductDemo {
         ObjectOutputStream product;
         try {
             product = new ObjectOutputStream(new FileOutputStream("D:\\CaseStudy_Module_2\\src\\ProductFile\\Product.txt"));
-            Product products = new Product("123", "Bánh A", "22/12/2019", "10","50");
+            Product products = new Product("123", "Bánh A", "02/02/2020", "10","50");
             product.writeObject(products);
             System.out.println("Run");
         } catch (IIOException | FileNotFoundException e){

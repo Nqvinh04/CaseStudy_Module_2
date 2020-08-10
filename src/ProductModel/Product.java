@@ -1,6 +1,7 @@
 package ProductModel;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 public class Product implements Serializable {
     private String id ;
@@ -9,17 +10,20 @@ public class Product implements Serializable {
     private String price;
     private String amount;
     private String creatAmount;
+    private String quycach = "gói";
 
     public Product(){
     };
 
-    public Product(String id, String name, String exp, String price, String amount){
+    public Product(String id, String name, String exp, String price, String amoun){
         this.id = id;
         this.name = name;
         this.exp = exp;
         this. price = price;
         this.amount = amount;
     }
+
+
 
 //    public Product(String creatAmount) {
 //        this.creatAmount = creatAmount;

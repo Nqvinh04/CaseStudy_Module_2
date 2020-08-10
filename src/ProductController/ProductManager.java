@@ -11,9 +11,7 @@ import javafx.scene.text.Text;
 
 import java.io.File;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class ProductManager implements Initializable {
     @FXML
@@ -171,13 +169,14 @@ public class ProductManager implements Initializable {
         }
     }
 
+
     // Edit ra
     public void edit(){
             Product product = tableView.getSelectionModel().getSelectedItem();
             if (product == null) {
                 Alert alert = new Alert(Alert.AlertType.WARNING);
                 alert.setTitle("Cảnh Báo Hệ Thống");
-                alert.setContentText("Không có sản phẩm nào được chọn!!! Vui lòng chọn lại.");
+                alert.setContentText("Không có sa");
             } else {
                 idText.setText(product.getId());
                 nameText.setText(product.getName());

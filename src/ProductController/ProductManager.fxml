@@ -5,12 +5,6 @@
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="533.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProductController.ProductManager">
-    <SplitMenuButton layoutX="565.0" layoutY="239.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" text="Sắp xếp">
-        <items>
-            <MenuItem mnemonicParsing="false" text="Action 1" />
-            <MenuItem mnemonicParsing="false" text="Action 2" />
-        </items>
-    </SplitMenuButton>
     <Button fx:id="saveButton" layoutX="319.0" layoutY="183.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="61.0" text="Save" />
     <Button layoutX="319.0" layoutY="78.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="25.0" prefWidth="61.0" text="Add" />
     <Button layoutX="319.0" layoutY="148.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="25.0" prefWidth="61.0" text="Delete" />
@@ -52,8 +46,8 @@
     </Label>
     <Separator layoutX="-7.0" layoutY="58.0" prefHeight="6.0" prefWidth="752.0" />
    <Button layoutX="654.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Quay Lại" />
-   <TextField fx:id="expText" layoutX="118.0" layoutY="218.0" />
    <Label layoutX="24.0" layoutY="222.0" text="Ngày Sản Xuất" />
    <Button fx:id="editButton" layoutX="319.0" layoutY="113.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="61.0" text="Edit" />
+   <TextField fx:id="expText" layoutX="118.0" layoutY="218.0" />
 
 </AnchorPane>
